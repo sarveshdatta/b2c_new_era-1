@@ -38,7 +38,32 @@ again check it [ http://172.0.0.1:8000/docs ]
 
 
 till in that WHAT you buid / system supports : :  
-   Product
-   orders
-   product validation 
-   logistics type ( 2PL / 3PL / 4PL )
+   > Product
+   > orders
+   > product validation 
+   > logistics type ( 2PL / 3PL / 4PL )
+
+
+
+in that you can:   [ POST /place-order Place Order ] row: 
+      { 
+         "id": 1,
+         "user_name": "your_name",
+         "product_id": 1,
+         "status": "created",
+         "logistics_type": "3PL"
+      }
+
+The output shown like this::
+            
+      {
+        "message": "Order placed",  
+        "order": {
+          "id": 1,
+          "user_name": "sarvesh",
+          "product_id": 1,
+          "status": "created",
+          "logistics_type": "3PL"
+        }
+      }
+    
