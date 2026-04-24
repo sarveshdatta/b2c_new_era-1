@@ -1,0 +1,61 @@
+pip install fastapi uvicorn
+
+Create project folder:
+
+       cd ecommerce_project
+       mkdir ecommerce_project
+
+create / update a file:
+       touch main.py 
+        nano main.py
+
+
+first test this:
+  from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def home():
+    return {"message": "Hello Muhammad Aziz >> "}
+
+To run this:
+  uvicorn main:app --reload
+
+<< if it's  work replace with this:
+   from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+# Temporary storage (later database)
+products = []
+
+class Product(BaseModel):
+    id: int
+    name: str
+    original_code: str
+    dealer_id: int
+
+@app.get("/")
+def home():
+    return {"message": "E-commerce system running"}
+
+@app.post("/create-product")
+def create_product(product: Product):
+    products.append(product)
+    return {"message": "Product added", "product": product}
+
+@app.get("/products")
+def get_products():
+    return products
+
+
+  IN THAT WHAT DID YOU CREATE TILL..
+     
+     >   Backend server
+     >   API system
+     >   Product storage
+     >   Testing interface
+
+  
