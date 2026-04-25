@@ -24,11 +24,11 @@
                
  Schemas:
 ￼
- Delivery > Expand allobject
-￼HTTPValidationError >￼Expand allobject
-￼Order >￼Expand allobject
-￼Product >￼Expand allobject
-￼ValidationError >￼Expand allobject
+Delivery > Expand allobject
+HTTPValidationError >￼Expand allobject
+Order >￼Expand allobject
+Product >￼Expand allobject
+ValidationError >￼Expand allobject
  
  
  
