@@ -24,7 +24,7 @@
                
  Schemas:
 ￼
- Delivery > ￼Expand allobject
+ Delivery > Expand allobject
 ￼HTTPValidationError >￼Expand allobject
 ￼Order >￼Expand allobject
 ￼Product >￼Expand allobject
