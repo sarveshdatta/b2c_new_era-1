@@ -60,7 +60,7 @@ The output shown like this::
         "message": "Order placed",  
         "order": {
           "id": 1,
-          "user_name": "sarvesh",
+          "user_name": "Muhammad_Aziz",
           "product_id": 1,
           "status": "created",
           "logistics_type": "3PL"
